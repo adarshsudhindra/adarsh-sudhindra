@@ -50,9 +50,6 @@ const Index = () => {
                 >
                   Read My Writing
                 </Link>
-                <button className="inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                  <Download className="h-4 w-4" /> Download Profile
-                </button>
               </div>
             </div>
             <motion.div
