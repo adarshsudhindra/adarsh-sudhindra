@@ -78,11 +78,6 @@ const About = () => (
           </div>
         </div>
 
-        <div className="mt-12">
-          <button className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]">
-            <Download className="h-4 w-4" /> Download Full Bio
-          </button>
-        </div>
       </div>
     </section>
   </Layout>
