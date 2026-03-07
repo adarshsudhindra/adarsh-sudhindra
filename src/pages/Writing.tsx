@@ -62,15 +62,6 @@ const Writing = () => {
             <p className="mt-10 text-center text-muted-foreground">No articles found matching your criteria.</p>
           )}
 
-          {/* CTA */}
-          <div className="mt-16 rounded-xl border border-border bg-card p-8 text-center">
-            <h3 className="font-heading text-xl font-bold">Follow My Writing</h3>
-            <p className="mt-2 text-sm text-muted-foreground">Get notified when I publish new articles on AI, product, and leadership.</p>
-            <div className="mt-4 flex justify-center gap-2">
-              <input type="email" placeholder="your@email.com" className="w-64 rounded-lg border border-input bg-background px-4 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring" />
-              <button className="rounded-lg bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground hover:scale-[1.02] transition-transform">Subscribe</button>
-            </div>
-          </div>
         </div>
       </section>
     </Layout>
