@@ -46,7 +46,7 @@ export const profile = {
   name: "Adarsh Sudhindra",
   role: "Technologist | Innovator | Entrepreneur | TEDx Speaker",
   summary: "I build products that make high-stakes learning and assessment smarter, fairer, and more secure. With deep experience across AI, product strategy, and innovation systems, I help organizations rethink how they evaluate talent and potential.",
-  location: "India",
+  location: "Greater Boston, US",
   email: "hello@adarshsudhindra.com",
   linkedin: "https://linkedin.com/in/adarshsudhindra",
   twitter: "https://twitter.com/adarshsudhindra",

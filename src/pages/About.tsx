@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { profile, education, principles, capabilities } from "@/data/profile";
