@@ -14,7 +14,6 @@ const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Ligh
 const Index = () => {
   const featuredArticles = articles.slice(0, 3);
   const recentExperiences = experiences.slice(0, 3);
-  const featuredProjects = projects.slice(0, 3);
 
   return (
     <Layout>
