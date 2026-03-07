@@ -6,9 +6,8 @@ import profilePhoto from "@/assets/profile.jpeg";
 import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
 import ArticleCard from "@/components/ArticleCard";
-import ProjectCard from "@/components/ProjectCard";
 import TimelineItem from "@/components/TimelineItem";
-import { profile, metrics, pillars, experiences, projects, articles, talks, interests } from "@/data/profile";
+import { profile, metrics, pillars, experiences, articles, interests } from "@/data/profile";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
