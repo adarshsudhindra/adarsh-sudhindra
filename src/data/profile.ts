@@ -44,9 +44,9 @@ export interface Award {
 
 export const profile = {
   name: "Adarsh Sudhindra",
-  role: "Product & Innovation Leader | AI in Learning & Assessment | Builder | Speaker",
+  role: "Technologist | Innovator | Entrepreneur | TEDx Speaker",
   summary: "I build products that make high-stakes learning and assessment smarter, fairer, and more secure. With deep experience across AI, product strategy, and innovation systems, I help organizations rethink how they evaluate talent and potential.",
-  location: "India",
+  location: "Greater Boston, US",
   email: "hello@adarshsudhindra.com",
   linkedin: "https://linkedin.com/in/adarshsudhindra",
   twitter: "https://twitter.com/adarshsudhindra",
@@ -92,47 +92,38 @@ export const pillars = [
 
 export const experiences: Experience[] = [
   {
-    company: "Excelsoft Technologies Limited",
-    title: "Vice President — Product & Innovation",
-    duration: "2019 – Present",
-    location: "India",
+    company: "Excelsoft Technologies",
+    title: "Vice President — Products & Innovation",
+    duration: "Oct 2014 – Present",
+    location: "Greater Boston, US",
     outcomes: [
-      "Leading product strategy for AI-powered assessment and learning platforms serving millions of candidates globally",
+      "Leading product strategy and innovation for AI-powered assessment and learning platforms serving millions globally",
       "Spearheaded integrity and security frameworks for high-stakes national examinations",
       "Built and scaled cross-functional teams across product, engineering, and design",
       "Drove partnerships with national bodies and global certification organizations",
+      "Progressed from Product Strategist → Senior Product Strategist → VP Products & Innovation",
     ],
     current: true,
   },
   {
-    company: "Excelsoft Technologies Limited",
-    title: "Director — Product Management",
-    duration: "2015 – 2019",
-    location: "India",
-    outcomes: [
-      "Launched next-generation assessment platform with AI-driven adaptive testing",
-      "Reduced operational burden for large-scale exam delivery by 40%",
-      "Established product management discipline and innovation culture",
-    ],
-  },
-  {
     company: "Adobe Systems",
-    title: "Senior Product Manager",
-    duration: "2012 – 2015",
+    title: "Senior Software Development Engineer",
+    duration: "Jun 2011 – Sep 2014",
     location: "India",
     outcomes: [
-      "Managed product lifecycle for enterprise learning and content management solutions",
-      "Drove adoption across Fortune 500 clients with data-driven product decisions",
+      "Worked on Adobe Flash Professional and Adobe Web Technology Group",
+      "Contributed to core product development for enterprise creative tools",
+      "Progressed from Software Development Engineer to Senior Software Development Engineer",
     ],
   },
   {
     company: "IBM Software Labs",
-    title: "Software Engineer → Product Lead",
-    duration: "2008 – 2012",
+    title: "Software Development Intern",
+    duration: "2008 – 2011",
     location: "India",
     outcomes: [
-      "Transitioned from engineering to product leadership",
       "Contributed to enterprise collaboration and middleware platforms",
+      "Gained foundational experience in large-scale software development",
     ],
   },
 ];

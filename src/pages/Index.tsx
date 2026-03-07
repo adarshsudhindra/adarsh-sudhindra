@@ -1,21 +1,19 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Download, Brain, Shield, Target, Lightbulb, Users } from "lucide-react";
+import { ArrowRight, Brain, Shield, Target, Lightbulb, Users } from "lucide-react";
 import Layout from "@/components/Layout";
 import profilePhoto from "@/assets/profile.jpeg";
 import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
 import ArticleCard from "@/components/ArticleCard";
-import ProjectCard from "@/components/ProjectCard";
 import TimelineItem from "@/components/TimelineItem";
-import { profile, metrics, pillars, experiences, projects, articles, talks, interests } from "@/data/profile";
+import { profile, metrics, pillars, experiences, articles, interests } from "@/data/profile";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
 const Index = () => {
   const featuredArticles = articles.slice(0, 3);
   const recentExperiences = experiences.slice(0, 3);
-  const featuredProjects = projects.slice(0, 3);
 
   return (
     <Layout>
@@ -50,9 +48,6 @@ const Index = () => {
                 >
                   Read My Writing
                 </Link>
-                <button className="inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-                  <Download className="h-4 w-4" /> Download Profile
-                </button>
               </div>
             </div>
             <motion.div
@@ -126,21 +121,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Work */}
-      <section className="section-padding bg-muted/30">
-        <div className="container-wide">
-          <SectionHeading title="Featured Work" subtitle="Flagship initiatives and their outcomes." />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((p, i) => (
-              <ProjectCard key={p.title} {...p} index={i} />
-            ))}
-          </div>
-          <Link to="/projects" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-            View all projects <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-      </section>
-
       {/* Featured Writing */}
       <section className="section-padding">
         <div className="container-wide">
@@ -152,34 +132,6 @@ const Index = () => {
           </div>
           <Link to="/writing" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
             Browse all writing <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-      </section>
-
-      {/* Speaking */}
-      <section className="section-padding bg-muted/30">
-        <div className="container-wide">
-          <SectionHeading title="Speaking & Media" subtitle="Recent and upcoming engagements." />
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {talks.slice(0, 3).map((t, i) => (
-              <motion.div
-                key={t.title}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="rounded-xl border border-border bg-card p-5"
-              >
-                {t.upcoming && (
-                  <span className="mb-2 inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">Upcoming</span>
-                )}
-                <h3 className="text-sm font-semibold">{t.title}</h3>
-                <p className="mt-1 text-xs text-muted-foreground">{t.event} · {t.location} · {t.year}</p>
-              </motion.div>
-            ))}
-          </div>
-          <Link to="/speaking" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-            View all talks <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
       </section>

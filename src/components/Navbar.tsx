@@ -8,8 +8,6 @@ const links = [
   { label: "About", path: "/about" },
   { label: "Work & Impact", path: "/work" },
   { label: "Writing", path: "/writing" },
-  { label: "Speaking", path: "/speaking" },
-  { label: "Projects", path: "/projects" },
   { label: "Personal", path: "/personal" },
   { label: "Contact", path: "/contact" },
 ];
