@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Download, Brain, Shield, Target, Lightbulb, Users } from "lucide-react";
+import { ArrowRight, Brain, Shield, Target, Lightbulb, Users } from "lucide-react";
 import Layout from "@/components/Layout";
 import profilePhoto from "@/assets/profile.jpeg";
 import MetricCard from "@/components/MetricCard";
