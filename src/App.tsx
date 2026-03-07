@@ -7,8 +7,6 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Writing from "./pages/Writing";
-import Speaking from "./pages/Speaking";
-import Projects from "./pages/Projects";
 import Personal from "./pages/Personal";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
