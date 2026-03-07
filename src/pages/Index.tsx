@@ -121,21 +121,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Work */}
-      <section className="section-padding bg-muted/30">
-        <div className="container-wide">
-          <SectionHeading title="Featured Work" subtitle="Flagship initiatives and their outcomes." />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((p, i) => (
-              <ProjectCard key={p.title} {...p} index={i} />
-            ))}
-          </div>
-          <Link to="/projects" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-            View all projects <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-      </section>
-
       {/* Featured Writing */}
       <section className="section-padding">
         <div className="container-wide">
