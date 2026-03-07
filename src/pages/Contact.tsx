@@ -1,112 +1,90 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Calendar } from "lucide-react";
+import { Mail, Linkedin, Mic, Users, Newspaper, MessageCircle } from "lucide-react";
 import Layout from "@/components/Layout";
 import { profile } from "@/data/profile";
 
-const Contact = () => {
-  const [form, setForm] = useState({ name: "", email: "", reason: "", message: "" });
+const reasons = [
+  { icon: Mic, label: "Speaking Invitations", description: "Conferences, panels, keynotes, and workshops" },
+  { icon: Users, label: "Collaboration", description: "Product partnerships, advisory, or joint ventures" },
+  { icon: Newspaper, label: "Media & Interviews", description: "Podcasts, articles, and press inquiries" },
+  { icon: MessageCircle, label: "General Inquiries", description: "Anything else — I'm happy to chat" },
+];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Placeholder — would integrate with a backend
-    alert("Thank you for reaching out! I'll get back to you soon.");
-    setForm({ name: "", email: "", reason: "", message: "" });
-  };
+const Contact = () => (
+  <Layout>
+    <section className="section-padding">
+      <div className="container-narrow">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
+          <p className="text-sm font-medium uppercase tracking-widest text-primary">Get in Touch</p>
+          <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Let's Start a Conversation</h1>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground leading-relaxed">
+            Whether you'd like to invite me to speak, explore a collaboration, discuss a media opportunity, or simply connect — I'd love to hear from you.
+          </p>
+        </motion.div>
 
-  return (
-    <Layout>
-      <section className="section-padding">
-        <div className="container-narrow">
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <p className="text-sm font-medium uppercase tracking-widest text-primary">Contact</p>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Let's Connect</h1>
-            <p className="mt-3 text-lg text-muted-foreground">Have a question, collaboration idea, or speaking invite? I'd love to hear from you.</p>
-          </motion.div>
-
-          <div className="mt-12 grid gap-10 lg:grid-cols-5">
-            {/* Form */}
-            <form onSubmit={handleSubmit} className="lg:col-span-3 space-y-5">
-              <div>
-                <label className="text-sm font-medium">Name</label>
-                <input
-                  type="text" required value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="mt-1 w-full rounded-lg border border-input bg-card px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="text-sm font-medium">Email</label>
-                <input
-                  type="email" required value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="mt-1 w-full rounded-lg border border-input bg-card px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div>
-                <label className="text-sm font-medium">Reason</label>
-                <select
-                  value={form.reason}
-                  onChange={(e) => setForm({ ...form, reason: e.target.value })}
-                  className="mt-1 w-full rounded-lg border border-input bg-card px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                >
-                  <option value="">Select a reason</option>
-                  <option value="speaking">Speaking invitation</option>
-                  <option value="collaboration">Collaboration</option>
-                  <option value="consulting">Consulting / Advisory</option>
-                  <option value="media">Media / Interview</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label className="text-sm font-medium">Message</label>
-                <textarea
-                  required rows={5} value={form.message}
-                  onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  className="mt-1 w-full rounded-lg border border-input bg-card px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-                  placeholder="Tell me more..."
-                />
-              </div>
-              <button type="submit" className="rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]">
-                Send Message
-              </button>
-            </form>
-
-            {/* Sidebar */}
-            <div className="lg:col-span-2 space-y-4">
-              <a href={profile.linkedin} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-3 rounded-xl border border-border bg-card p-5 hover:border-primary/30 transition-colors"
-              >
-                <Linkedin className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold">LinkedIn</p>
-                  <p className="text-xs text-muted-foreground">Connect with me professionally</p>
-                </div>
-              </a>
-              <a href={`mailto:${profile.email}`}
-                className="flex items-center gap-3 rounded-xl border border-border bg-card p-5 hover:border-primary/30 transition-colors"
-              >
-                <Mail className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold">Email</p>
-                  <p className="text-xs text-muted-foreground">{profile.email}</p>
-                </div>
-              </a>
-              <div className="flex items-center gap-3 rounded-xl border border-border bg-card p-5">
-                <Calendar className="h-5 w-5 text-primary" />
-                <div>
-                  <p className="text-sm font-semibold">Book a Call</p>
-                  <p className="text-xs text-muted-foreground">Calendar booking coming soon</p>
-                </div>
-              </div>
-            </div>
+        {/* Email CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12 text-center"
+        >
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+            <Mail className="h-7 w-7 text-primary" />
           </div>
+          <h2 className="mt-6 text-2xl font-bold">Drop me a line</h2>
+          <p className="mt-2 text-muted-foreground">The best way to reach me is via email</p>
+          <a
+            href="mailto:adarsh.sudhindra@gmail.com"
+            className="mt-6 inline-flex items-center gap-2 rounded-lg bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
+          >
+            <Mail className="h-4 w-4" />
+            adarsh.sudhindra@gmail.com
+          </a>
+        </motion.div>
+
+        {/* Reasons */}
+        <div className="mt-12 grid gap-4 sm:grid-cols-2">
+          {reasons.map((r, i) => (
+            <motion.div
+              key={r.label}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.08 }}
+              className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
+            >
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <r.icon className="h-5 w-5" />
+              </div>
+              <h3 className="mt-4 text-sm font-semibold">{r.label}</h3>
+              <p className="mt-1 text-xs text-muted-foreground">{r.description}</p>
+            </motion.div>
+          ))}
         </div>
-      </section>
-    </Layout>
-  );
-};
+
+        {/* LinkedIn */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="mt-12 text-center"
+        >
+          <p className="text-sm text-muted-foreground">You can also find me on</p>
+          <a
+            href={profile.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-colors hover:border-primary/30 hover:bg-muted"
+          >
+            <Linkedin className="h-4 w-4 text-primary" />
+            LinkedIn
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  </Layout>
+);
 
 export default Contact;
