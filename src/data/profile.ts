@@ -93,7 +93,7 @@ export const experiences: Experience[] = [
     company: "Excelsoft Technologies",
     title: "Chief Innovation Officer",
     duration: "Feb 2026 – Present",
-    location: "Greater Boston, US",
+    location: "India",
     outcomes: [
       "Leading innovation strategy and product vision for AI-powered assessment and learning platforms serving millions globally",
       "Driving forward innovative solutions that align with organizational goals and foster impactful advancements in e-learning",
