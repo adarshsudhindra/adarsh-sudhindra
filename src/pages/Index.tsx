@@ -128,8 +128,8 @@ const Index = () => {
 
       {/* Personal */}
       <section className="section-padding">
-        <div className="container-narrow text-center">
-          <SectionHeading title="Beyond Work" subtitle="Values, curiosity, and a lifelong learning mindset." align="center" />
+        <div className="container-narrow">
+          <SectionHeading title="Beyond Work" subtitle="Values, curiosity, and a lifelong learning mindset." />
           <div className="mt-8 flex flex-wrap justify-center gap-2">
             {interests.map((i) =>
             <span key={i} className="rounded-full border border-border px-4 py-1.5 text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-colors">
