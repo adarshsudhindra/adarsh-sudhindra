@@ -20,7 +20,7 @@ const Speaking = () => {
           </motion.div>
 
           {/* Bio */}
-          <div className="mt-10 rounded-xl border border-border bg-card p-8">
+          <div className="mt-12 rounded-xl border border-border bg-card p-8">
             <h2 className="text-lg font-semibold">Speaker Bio</h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
               {profile.name} is a Product & Innovation leader with 15+ years of experience building AI-powered
