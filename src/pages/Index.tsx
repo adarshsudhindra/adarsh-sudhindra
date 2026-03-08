@@ -5,7 +5,7 @@ import Layout from "@/components/Layout";
 import profilePhoto from "@/assets/profile-sm.webp";
 import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
-import ArticleCard from "@/components/ArticleCard";
+
 import TimelineItem from "@/components/TimelineItem";
 import { profile, metrics, pillars, experiences, articles, interests } from "@/data/profile";
 
