@@ -17,10 +17,11 @@ const About = () => (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="mt-10 rounded-xl border border-border bg-card p-8">
           <h2 className="text-lg font-semibold">Executive Summary</h2>
           <p className="mt-3 text-muted-foreground leading-relaxed">
-            {profile.summary} With a Master's in Computer Science from the University of Illinois Urbana-Champaign
-            and executive education from Kellogg School of Management, I combine technical depth with strategic thinking.
-            My career spans IBM Software Labs, Adobe Systems, and a decade at Excelsoft Technologies, where I currently
-            lead product and innovation for AI-powered assessment platforms serving millions globally.
+            {profile.summary} With a Master's in Computer Science from the University of Illinois Urbana-Champaign,
+            executive education from Northwestern University — Kellogg School of Management, and a Bachelor's from
+            The National Institute of Engineering, Mysore, I combine technical depth with strategic thinking.
+            My career spans IBM Software Labs, Adobe Systems, and over a decade at Excelsoft Technologies, where I currently
+            serve as Chief Innovation Officer for AI-powered assessment platforms serving millions globally.
           </p>
         </motion.div>
 
