@@ -1,17 +1,19 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import TimelineItem from "@/components/TimelineItem";
-import { experiences, awards, capabilities } from "@/data/profile";
+import { experiences, capabilities } from "@/data/profile";
+
+const videos = [
+  { id: "ipWtbnorFCM", title: "Video 1" },
+  { id: "MHlwNzND4RM", title: "Video 2" },
+  { id: "p67dOJXDzJo", title: "Video 3" },
+  { id: "eOEyf9yEJtk", title: "Video 4" },
+  { id: "q31eBYVcqxM", title: "Video 5" },
+  { id: "Fv0BlozGyLU", title: "Video 6" },
+];
 
 const Work = () => {
-  const [filter, setFilter] = useState("");
-
-  const filteredAwards = filter
-    ? awards.filter((a) => a.title.toLowerCase().includes(filter.toLowerCase()) || a.organization.toLowerCase().includes(filter.toLowerCase()))
-    : awards;
-
   return (
     <Layout>
       <section className="section-padding">
@@ -32,25 +34,29 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Awards */}
+          {/* Videos */}
           <div className="mt-16">
-            <SectionHeading title="Awards & Recognition" />
-            <input
-              type="text"
-              placeholder="Search awards..."
-              value={filter}
-              onChange={(e) => setFilter(e.target.value)}
-              className="mt-6 w-full max-w-sm rounded-lg border border-input bg-card px-4 py-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-            />
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {filteredAwards.map((a, i) => (
-                <motion.div key={a.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.08 }}
-                  className="rounded-xl border border-border bg-card p-5"
+            <SectionHeading title="Videos" />
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+              {videos.map((v, i) => (
+                <motion.div
+                  key={v.id}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                  className="overflow-hidden rounded-xl border border-border bg-card"
                 >
-                  <p className="text-xs font-medium text-primary">{a.year}</p>
-                  <h3 className="mt-1 font-semibold text-sm">{a.title}</h3>
-                  <p className="mt-0.5 text-xs text-muted-foreground">{a.organization}</p>
-                  {a.description && <p className="mt-2 text-xs text-muted-foreground">{a.description}</p>}
+                  <div className="aspect-video">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${v.id}`}
+                      title={v.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="h-full w-full"
+                      loading="lazy"
+                    />
+                  </div>
                 </motion.div>
               ))}
             </div>
