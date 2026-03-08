@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+    --font-heading: 'Nunito Sans', system-ui, sans-serif;
     --font-body: 'Nunito Sans', system-ui, sans-serif;
 
     --background: 0 0% 98%;
