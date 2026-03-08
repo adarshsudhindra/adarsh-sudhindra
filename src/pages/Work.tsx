@@ -35,7 +35,7 @@ const Work = () => {
           </div>
 
           {/* Videos */}
-          <div className="mt-16">
+          <div className="mt-12">
             <SectionHeading title="Videos" />
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               {videos.map((v, i) => (
