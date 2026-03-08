@@ -12,7 +12,7 @@ import { profile, metrics, pillars, experiences, interests } from "@/data/profil
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
 const Index = () => {
-  const featuredArticles = articles.slice(0, 3);
+  const recentExperiences = experiences.slice(0, 3);
   const recentExperiences = experiences.slice(0, 3);
 
   return (
