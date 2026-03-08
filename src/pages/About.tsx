@@ -26,8 +26,9 @@ const About = () => (
           <p className="text-sm font-medium uppercase tracking-widest text-primary">About</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">The Story So Far</h1>
           <p className="mt-3 text-lg text-muted-foreground">Background, education, certifications, and operating principles.</p>
+        </motion.div>
 
-        {/* Executive Summary */}
+
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="mt-10 rounded-xl border border-border bg-card p-8">
           <h2 className="text-lg font-semibold">Executive Summary</h2>
           <p className="mt-3 text-muted-foreground leading-relaxed">
