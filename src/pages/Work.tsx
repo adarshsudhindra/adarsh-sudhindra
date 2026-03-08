@@ -27,7 +27,7 @@ const Work = () => {
           {/* Experience */}
           <div className="mt-12">
             <SectionHeading title="Experience Timeline" />
-            <div className="mt-8">
+            <div className="mt-6">
               {experiences.map((e, i) => (
                 <TimelineItem key={e.company + e.title} {...e} index={i} />
               ))}
@@ -35,7 +35,7 @@ const Work = () => {
           </div>
 
           {/* Videos */}
-          <div className="mt-16">
+          <div className="mt-12">
             <SectionHeading title="Videos" />
             <div className="mt-6 grid gap-6 md:grid-cols-2">
               {videos.map((v, i) => (
@@ -63,7 +63,7 @@ const Work = () => {
           </div>
 
           {/* Capabilities */}
-          <div className="mt-16">
+          <div className="mt-12">
             <SectionHeading title="Core Capabilities" />
             <div className="mt-6 flex flex-wrap gap-2">
               {capabilities.map((c) => (

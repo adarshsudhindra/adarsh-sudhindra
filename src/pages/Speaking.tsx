@@ -16,10 +16,11 @@ const Speaking = () => {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-sm font-medium uppercase tracking-widest text-primary">Speaking</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Speaker Profile</h1>
+            <p className="mt-3 text-lg text-muted-foreground">Conferences, keynotes, and topics I speak on.</p>
           </motion.div>
 
           {/* Bio */}
-          <div className="mt-10 rounded-xl border border-border bg-card p-8">
+          <div className="mt-12 rounded-xl border border-border bg-card p-8">
             <h2 className="text-lg font-semibold">Speaker Bio</h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
               {profile.name} is a Product & Innovation leader with 15+ years of experience building AI-powered
@@ -78,7 +79,7 @@ const Speaking = () => {
           </div>
 
           {/* CTA */}
-          <div className="mt-16 rounded-xl border border-border bg-card p-8 text-center">
+          <div className="mt-12 rounded-xl border border-border bg-card p-8 text-center">
             <h3 className="font-heading text-xl font-bold">Invite Me to Speak</h3>
             <p className="mt-2 text-sm text-muted-foreground">I'd love to share insights at your next event or conference.</p>
             <Link to="/contact" className="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:scale-[1.02] transition-transform">

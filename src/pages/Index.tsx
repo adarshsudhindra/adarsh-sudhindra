@@ -74,7 +74,7 @@ const Index = () => {
       <section className="section-padding">
         <div className="container-wide">
           <SectionHeading title="At a Glance" subtitle="Key highlights from my career journey." />
-          <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
             {metrics.map((m, i) =>
             <MetricCard key={m.label} label={m.label} value={m.value} index={i} />
             )}
@@ -86,7 +86,7 @@ const Index = () => {
       <section className="section-padding bg-muted/30">
         <div className="container-wide">
           <SectionHeading title="What I'm Known For" subtitle="Signature themes across my work and leadership." />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {pillars.map((p, i) => {
               const Icon = iconMap[p.icon] || Brain;
               return (
@@ -114,7 +114,7 @@ const Index = () => {
       <section className="section-padding">
         <div className="container-narrow">
           <SectionHeading title="Career Snapshot" subtitle="Recent roles and contributions." />
-          <div className="mt-10">
+          <div className="mt-8">
             {recentExperiences.map((e, i) =>
             <TimelineItem key={e.company + e.title} {...e} index={i} />
             )}
@@ -130,7 +130,7 @@ const Index = () => {
       <section className="section-padding">
         <div className="container-narrow">
           <SectionHeading title="Beyond Work" subtitle="Values, curiosity, and a lifelong learning mindset." />
-          <div className="mt-8 flex flex-wrap justify-center gap-2">
+          <div className="mt-6 flex flex-wrap justify-center gap-2">
             {interests.map((i) =>
             <span key={i} className="rounded-full border border-border px-4 py-1.5 text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-colors">
                 {i}

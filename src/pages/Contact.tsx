@@ -14,10 +14,10 @@ const Contact = () => (
   <Layout>
     <section className="section-padding">
       <div className="container-narrow">
-        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <p className="text-sm font-medium uppercase tracking-widest text-primary">Get in Touch</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Let's Start a Conversation</h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-3 max-w-2xl text-lg text-muted-foreground leading-relaxed">
             Whether you'd like to invite me to speak, explore a collaboration, discuss a media opportunity, or simply connect — I'd love to hear from you.
           </p>
         </motion.div>
@@ -27,9 +27,9 @@ const Contact = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12 text-center"
+          className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12"
         >
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
             <Mail className="h-7 w-7 text-primary" />
           </div>
           <h2 className="mt-6 text-2xl font-bold">Drop me a line</h2>
@@ -69,7 +69,7 @@ const Contact = () => (
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-12 text-center"
+          className="mt-12"
         >
           <p className="text-sm text-muted-foreground">You can also find me on</p>
           <a
