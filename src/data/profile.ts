@@ -302,14 +302,27 @@ export const awards: Award[] = [
 
 export const education = [
   {
-    institution: "Kellogg School of Management",
+    institution: "Northwestern University — Kellogg School of Management",
     degree: "Executive Scholar — Products & Innovation",
-    year: "2020",
+    year: "Apr 2025 – Jul 2026",
   },
   {
     institution: "University of Illinois Urbana-Champaign",
-    degree: "MS in Computer Science",
-    year: "2008",
+    degree: "Master's Degree, Computer Science",
+    year: "2013 – 2014",
+  },
+  {
+    institution: "The National Institute of Engineering, Mysore",
+    degree: "Bachelor's Degree, Computer Science",
+    year: "2004 – 2008",
+  },
+];
+
+export const certifications = [
+  {
+    title: "Digital Marketing and Social Media Analytics",
+    organization: "MIT Sloan School of Management",
+    issued: "Jul 2016",
   },
 ];
 

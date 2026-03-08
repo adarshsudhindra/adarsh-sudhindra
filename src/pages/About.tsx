@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import { profile, education, principles, capabilities } from "@/data/profile";
+import { profile, education, certifications, principles, capabilities } from "@/data/profile";
 
 const About = () => (
   <Layout>
@@ -17,10 +17,11 @@ const About = () => (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }} className="mt-10 rounded-xl border border-border bg-card p-8">
           <h2 className="text-lg font-semibold">Executive Summary</h2>
           <p className="mt-3 text-muted-foreground leading-relaxed">
-            {profile.summary} With a Master's in Computer Science from the University of Illinois Urbana-Champaign
-            and executive education from Kellogg School of Management, I combine technical depth with strategic thinking.
-            My career spans IBM Software Labs, Adobe Systems, and a decade at Excelsoft Technologies, where I currently
-            lead product and innovation for AI-powered assessment platforms serving millions globally.
+            {profile.summary} With a Master's in Computer Science from the University of Illinois Urbana-Champaign,
+            executive education from Northwestern University — Kellogg School of Management, and a Bachelor's from
+            The National Institute of Engineering, Mysore, I combine technical depth with strategic thinking.
+            My career spans IBM Software Labs, Adobe Systems, and over a decade at Excelsoft Technologies, where I currently
+            serve as Chief Innovation Officer for AI-powered assessment platforms serving millions globally.
           </p>
         </motion.div>
 
@@ -48,6 +49,22 @@ const About = () => (
                 <p className="text-xs font-medium text-primary">{e.year}</p>
                 <h3 className="mt-1 font-semibold">{e.degree}</h3>
                 <p className="mt-0.5 text-sm text-muted-foreground">{e.institution}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Certifications */}
+        <div className="mt-12">
+          <SectionHeading title="Licenses & Certifications" />
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {certifications.map((c, i) => (
+              <motion.div key={c.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+                className="rounded-xl border border-border bg-card p-6"
+              >
+                <p className="text-xs font-medium text-primary">Issued {c.issued}</p>
+                <h3 className="mt-1 font-semibold">{c.title}</h3>
+                <p className="mt-0.5 text-sm text-muted-foreground">{c.organization}</p>
               </motion.div>
             ))}
           </div>
