@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import { profile, education, principles, capabilities } from "@/data/profile";
+import { profile, education, certifications, principles, capabilities } from "@/data/profile";
 
 const About = () => (
   <Layout>
