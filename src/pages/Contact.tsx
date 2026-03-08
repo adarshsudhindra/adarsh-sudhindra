@@ -52,7 +52,7 @@ const Contact = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
+              className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg text-center flex flex-col items-center"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                 <r.icon className="h-5 w-5" />
