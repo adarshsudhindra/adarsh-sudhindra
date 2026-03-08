@@ -5,14 +5,13 @@ import Layout from "@/components/Layout";
 import profilePhoto from "@/assets/profile-sm.webp";
 import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
-import ArticleCard from "@/components/ArticleCard";
+
 import TimelineItem from "@/components/TimelineItem";
-import { profile, metrics, pillars, experiences, articles, interests } from "@/data/profile";
+import { profile, metrics, pillars, experiences, interests } from "@/data/profile";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
 const Index = () => {
-  const featuredArticles = articles.slice(0, 3);
   const recentExperiences = experiences.slice(0, 3);
 
   return (
@@ -126,20 +125,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Posts */}
-      <section className="section-padding">
-        <div className="container-wide">
-          <SectionHeading title="Featured Posts" subtitle="Thoughts on AI, product, and leadership." />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredArticles.map((a, i) =>
-            <ArticleCard key={a.slug} {...a} index={i} />
-            )}
-          </div>
-          <Link to="/writing" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-            Browse all posts <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-      </section>
 
       {/* Personal */}
       <section className="section-padding">
