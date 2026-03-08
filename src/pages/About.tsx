@@ -6,6 +6,11 @@ import { profile, education, certifications, principles, capabilities } from "@/
 import kelloggLogo from "@/assets/kellogg.jpeg";
 import illinoisLogo from "@/assets/illinois.jpeg";
 import nieLogo from "@/assets/nie.jpg";
+import mitLogo from "@/assets/mit.jpeg";
+
+const certLogos: Record<string, string> = {
+  "MIT Sloan School of Management": mitLogo,
+};
 
 const institutionLogos: Record<string, string> = {
   "Northwestern University — Kellogg School of Management": kelloggLogo,
@@ -78,7 +83,12 @@ const About = () => (
               >
                 <p className="text-xs font-medium text-primary">Issued {c.issued}</p>
                 <h3 className="mt-1 font-semibold">{c.title}</h3>
-                <p className="mt-0.5 text-sm text-muted-foreground">{c.organization}</p>
+                <div className="mt-0.5 flex items-center gap-2">
+                  {certLogos[c.organization] && (
+                    <img src={certLogos[c.organization]} alt={c.organization} className="h-5 w-5 rounded-sm object-contain" />
+                  )}
+                  <p className="text-sm text-muted-foreground">{c.organization}</p>
+                </div>
               </motion.div>
             ))}
           </div>
