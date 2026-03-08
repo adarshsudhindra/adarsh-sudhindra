@@ -27,7 +27,7 @@ const Contact = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12"
+          className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12 text-center flex flex-col items-center"
         >
           <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
             <Mail className="h-7 w-7 text-primary" />
@@ -52,7 +52,7 @@ const Contact = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
+              className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg text-center flex flex-col items-center"
             >
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                 <r.icon className="h-5 w-5" />
@@ -69,7 +69,7 @@ const Contact = () => (
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-12"
+          className="mt-12 text-center flex flex-col items-center"
         >
           <p className="text-sm text-muted-foreground">You can also find me on</p>
           <a
