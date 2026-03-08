@@ -13,7 +13,6 @@ const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Ligh
 
 const Index = () => {
   const recentExperiences = experiences.slice(0, 3);
-  const recentExperiences = experiences.slice(0, 3);
 
   return (
     <Layout>
