@@ -7,7 +7,7 @@ const links = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "Work & Impact", path: "/work" },
-  { label: "Writing", path: "/writing" },
+  { label: "My Posts", path: "/writing" },
   { label: "Personal", path: "/personal" },
   { label: "Contact", path: "/contact" },
 ];

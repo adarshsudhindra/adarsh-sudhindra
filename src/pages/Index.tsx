@@ -49,7 +49,7 @@ const Index = () => {
                   to="/writing"
                   className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-muted">
                   
-                  Read My Writing
+                  Read My Posts
                 </Link>
               </div>
             </div>
@@ -126,17 +126,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Writing */}
+      {/* Featured Posts */}
       <section className="section-padding">
         <div className="container-wide">
-          <SectionHeading title="Featured Writing" subtitle="Thoughts on AI, product, and leadership." />
+          <SectionHeading title="Featured Posts" subtitle="Thoughts on AI, product, and leadership." />
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuredArticles.map((a, i) =>
             <ArticleCard key={a.slug} {...a} index={i} />
             )}
           </div>
           <Link to="/writing" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-            Browse all writing <ArrowRight className="h-3.5 w-3.5" />
+            Browse all posts <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
       </section>
