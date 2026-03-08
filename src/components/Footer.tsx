@@ -4,8 +4,8 @@ import { profile } from "@/data/profile";
 
 const Footer = () => (
   <footer className="border-t border-border bg-card">
-    <div className="mx-auto max-w-7xl px-6 py-12">
-      <div className="grid gap-8 md:grid-cols-3">
+    <div className="mx-auto max-w-5xl px-6 py-12">
+      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
         <div>
           <h3 className="font-heading text-lg font-bold">Adarsh Sudhindra</h3>
           <p className="mt-2 text-sm text-muted-foreground max-w-xs">
@@ -14,7 +14,7 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="text-sm font-semibold mb-3">Quick Links</h4>
-          <div className="grid grid-cols-2 gap-1.5 text-sm text-muted-foreground">
+          <div className="flex flex-col gap-1.5 text-sm text-muted-foreground">
             {[
               { label: "About", path: "/about" },
               { label: "Work & Impact", path: "/work" },
@@ -22,7 +22,7 @@ const Footer = () => (
               { label: "Personal", path: "/personal" },
               { label: "Contact", path: "/contact" },
             ].map((l) => (
-              <Link key={l.path} to={l.path} className="hover:text-foreground transition-colors">
+              <Link key={l.path} to={l.path} className="hover:text-foreground transition-colors w-fit">
                 {l.label}
               </Link>
             ))}
