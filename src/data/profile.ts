@@ -44,8 +44,8 @@ export interface Award {
 
 export const profile = {
   name: "Adarsh Sudhindra",
-  role: "Technologist | Innovator | Entrepreneur | TEDx Speaker",
-  summary: "I build products that make high-stakes learning and assessment smarter, fairer, and more secure. With deep experience across AI, product strategy, and innovation systems, I help organizations rethink how they evaluate talent and potential.",
+  role: "Chief Innovation Officer | Technologist | Innovator | Entrepreneur | TEDx Speaker | UIUC Computer Science | Kellogg School of Business",
+  summary: "As Chief Innovation Officer at Excelsoft Technologies since February 2026, I bring extensive experience in product management, product development, and educational technology. My work emphasizes driving forward innovative solutions that align with organizational goals and foster impactful advancements in e-learning.\n\nI build products that make high-stakes learning and assessment smarter, fairer, and more secure. With deep experience across AI, product strategy, and innovation systems, I help organizations rethink how they evaluate talent and potential.",
   location: "Greater Boston, US",
   email: "adarsh.sudhindra@gmail.com",
   linkedin: "https://www.linkedin.com/in/adarshsudhindra/",
@@ -91,17 +91,29 @@ export const pillars = [
 export const experiences: Experience[] = [
   {
     company: "Excelsoft Technologies",
-    title: "Vice President — Products & Innovation",
-    duration: "Oct 2014 – Present",
+    title: "Chief Innovation Officer",
+    duration: "Feb 2026 – Present",
     location: "Greater Boston, US",
     outcomes: [
-      "Leading product strategy and innovation for AI-powered assessment and learning platforms serving millions globally",
+      "Leading innovation strategy and product vision for AI-powered assessment and learning platforms serving millions globally",
+      "Driving forward innovative solutions that align with organizational goals and foster impactful advancements in e-learning",
       "Spearheaded integrity and security frameworks for high-stakes national examinations",
       "Built and scaled cross-functional teams across product, engineering, and design",
       "Drove partnerships with national bodies and global certification organizations",
-      "Progressed from Product Strategist → Senior Product Strategist → VP Products & Innovation",
+      "Progressed from Product Strategist → Senior Product Strategist → VP Products & Innovation → Chief Innovation Officer",
     ],
     current: true,
+  },
+  {
+    company: "Excelsoft Technologies",
+    title: "Vice President — Products & Innovation",
+    duration: "Oct 2014 – Jan 2026",
+    location: "Greater Boston, US",
+    outcomes: [
+      "Led product strategy and innovation for AI-powered assessment and learning platforms",
+      "Spearheaded integrity and security frameworks for high-stakes national examinations",
+      "Built and scaled cross-functional teams across product, engineering, and design",
+    ],
   },
   {
     company: "Adobe Systems",
