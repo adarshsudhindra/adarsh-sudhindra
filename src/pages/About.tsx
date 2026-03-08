@@ -54,6 +54,22 @@ const About = () => (
           </div>
         </div>
 
+        {/* Certifications */}
+        <div className="mt-12">
+          <SectionHeading title="Licenses & Certifications" />
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {certifications.map((c, i) => (
+              <motion.div key={c.title} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
+                className="rounded-xl border border-border bg-card p-6"
+              >
+                <p className="text-xs font-medium text-primary">Issued {c.issued}</p>
+                <h3 className="mt-1 font-semibold">{c.title}</h3>
+                <p className="mt-0.5 text-sm text-muted-foreground">{c.organization}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
         {/* Principles */}
         <div className="mt-12">
           <SectionHeading title="Operating Principles" subtitle="The beliefs that guide how I work and lead." />
