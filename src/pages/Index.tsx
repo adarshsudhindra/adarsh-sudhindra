@@ -114,7 +114,7 @@ const Index = () => {
       <section className="section-padding">
         <div className="container-narrow">
           <SectionHeading title="Career Snapshot" subtitle="Recent roles and contributions." />
-          <div className="mt-10">
+          <div className="mt-8">
             {recentExperiences.map((e, i) =>
             <TimelineItem key={e.company + e.title} {...e} index={i} />
             )}
