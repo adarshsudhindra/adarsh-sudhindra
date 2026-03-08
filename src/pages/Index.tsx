@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Shield, Target, Lightbulb, Users } from "lucide-react";
 import Layout from "@/components/Layout";
-import profilePhoto from "@/assets/profile.jpeg";
+import profilePhoto from "@/assets/profile-sm.webp";
 import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
 import ArticleCard from "@/components/ArticleCard";
@@ -59,6 +59,8 @@ const Index = () => {
               <img
                 src={profilePhoto}
                 alt="Adarsh Sudhindra"
+                width={256}
+                height={256}
                 className="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-4 border-primary/20 shadow-xl"
               />
             </motion.div>
