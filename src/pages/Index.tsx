@@ -86,7 +86,7 @@ const Index = () => {
       <section className="section-padding bg-muted/30">
         <div className="container-wide">
           <SectionHeading title="What I'm Known For" subtitle="Signature themes across my work and leadership." />
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {pillars.map((p, i) => {
               const Icon = iconMap[p.icon] || Brain;
               return (
