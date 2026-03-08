@@ -24,15 +24,15 @@ const Index = () => {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="py-12 md:py-20 flex flex-col-reverse md:flex-row items-center gap-10"
-          >
+            className="py-12 md:py-20 flex flex-col-reverse md:flex-row items-center gap-10">
+            
             <div className="flex-1">
               <p className="text-sm font-medium uppercase tracking-widest text-primary">Welcome</p>
               <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
                 {profile.name}
               </h1>
               <div className="mt-4 max-w-2xl">
-                <p className="text-lg text-muted-foreground md:text-xl">Chief Innovation Officer</p>
+                <p className="text-lg text-muted-foreground md:text-xl">Chief Innovation Officer @ Excelsoft Technologies</p>
                 <p className="text-base text-muted-foreground md:text-lg">Technologist | Innovator | Entrepreneur | TEDx Speaker</p>
               </div>
               <p className="mt-4 text-base text-muted-foreground max-w-xl leading-relaxed">
@@ -41,14 +41,14 @@ const Index = () => {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   to="/work"
-                  className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
-                >
+                  className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]">
+                  
                   View My Work <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   to="/writing"
-                  className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-muted"
-                >
+                  className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-muted">
+                  
                   Read My Writing
                 </Link>
               </div>
@@ -57,15 +57,15 @@ const Index = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="shrink-0"
-            >
+              className="shrink-0">
+              
               <img
                 src={profilePhoto}
                 alt="Adarsh Sudhindra"
                 width={256}
                 height={256}
-                className="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-4 border-primary/20 shadow-xl"
-              />
+                className="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-4 border-primary/20 shadow-xl" />
+              
             </motion.div>
           </motion.div>
         </div>
@@ -76,9 +76,9 @@ const Index = () => {
         <div className="container-wide">
           <SectionHeading title="At a Glance" subtitle="Key highlights from my career journey." />
           <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-            {metrics.map((m, i) => (
-              <MetricCard key={m.label} label={m.label} value={m.value} index={i} />
-            ))}
+            {metrics.map((m, i) =>
+            <MetricCard key={m.label} label={m.label} value={m.value} index={i} />
+            )}
           </div>
         </div>
       </section>
@@ -97,15 +97,15 @@ const Index = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: i * 0.08 }}
-                  className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg"
-                >
+                  className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-lg">
+                  
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="mt-4 text-sm font-semibold">{p.title}</h3>
                   <p className="mt-2 text-xs text-muted-foreground leading-relaxed">{p.description}</p>
-                </motion.div>
-              );
+                </motion.div>);
+
             })}
           </div>
         </div>
@@ -116,9 +116,9 @@ const Index = () => {
         <div className="container-narrow">
           <SectionHeading title="Career Snapshot" subtitle="Recent roles and contributions." />
           <div className="mt-10">
-            {recentExperiences.map((e, i) => (
-              <TimelineItem key={e.company + e.title} {...e} index={i} />
-            ))}
+            {recentExperiences.map((e, i) =>
+            <TimelineItem key={e.company + e.title} {...e} index={i} />
+            )}
           </div>
           <Link to="/work" className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
             See full timeline <ArrowRight className="h-3.5 w-3.5" />
@@ -131,9 +131,9 @@ const Index = () => {
         <div className="container-wide">
           <SectionHeading title="Featured Writing" subtitle="Thoughts on AI, product, and leadership." />
           <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {featuredArticles.map((a, i) => (
-              <ArticleCard key={a.slug} {...a} index={i} />
-            ))}
+            {featuredArticles.map((a, i) =>
+            <ArticleCard key={a.slug} {...a} index={i} />
+            )}
           </div>
           <Link to="/writing" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
             Browse all writing <ArrowRight className="h-3.5 w-3.5" />
@@ -146,19 +146,19 @@ const Index = () => {
         <div className="container-narrow text-center">
           <SectionHeading title="Beyond Work" subtitle="Values, curiosity, and a lifelong learning mindset." align="center" />
           <div className="mt-8 flex flex-wrap justify-center gap-2">
-            {interests.map((i) => (
-              <span key={i} className="rounded-full border border-border px-4 py-1.5 text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-colors">
+            {interests.map((i) =>
+            <span key={i} className="rounded-full border border-border px-4 py-1.5 text-sm text-muted-foreground hover:border-primary/30 hover:text-foreground transition-colors">
                 {i}
               </span>
-            ))}
+            )}
           </div>
           <Link to="/personal" className="mt-8 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
             Learn more about me <ArrowRight className="h-3.5 w-3.5" />
           </Link>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>);
+
 };
 
 export default Index;
