@@ -16,7 +16,7 @@ const SectionHeading = ({ title, subtitle, align = "left" }: SectionHeadingProps
   >
     <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{title}</h2>
     {subtitle && (
-      <p className={`mt-3 max-w-2xl text-lg text-muted-foreground${align === "center" ? " mx-auto" : ""}`}>
+      <p className="mt-3 max-w-2xl text-lg text-muted-foreground">
         {subtitle}
       </p>
     )}
