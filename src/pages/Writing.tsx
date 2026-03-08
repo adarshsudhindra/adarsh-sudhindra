@@ -1,21 +1,7 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 
 const Writing = () => {
-  useEffect(() => {
-    // Load SociableKit widget script
-    const script = document.createElement("script");
-    script.src = "https://widgets.sociablekit.com/linkedin-profile-posts/widget.js";
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup on unmount
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <Layout>
       <section className="section-padding">
@@ -29,7 +15,15 @@ const Writing = () => {
           </motion.div>
 
           <div className="mt-10">
-            <div className="sk-ww-linkedin-profile-post" data-embed-id="25660904"></div>
+            <iframe
+              src="https://widgets.sociablekit.com/linkedin-profile-posts/iframe/25660904"
+              sandbox="allow-scripts allow-same-origin allow-popups"
+              referrerPolicy="no-referrer"
+              loading="lazy"
+              className="w-full border-0"
+              style={{ minHeight: "600px" }}
+              title="LinkedIn Posts"
+            />
           </div>
         </div>
       </section>
