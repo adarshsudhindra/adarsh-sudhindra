@@ -19,6 +19,7 @@ const Footer = () => (
               { label: "About", path: "/about" },
               { label: "Work & Impact", path: "/work" },
               { label: "Writing", path: "/writing" },
+              { label: "Personal", path: "/personal" },
               { label: "Contact", path: "/contact" },
             ].map((l) => (
               <Link key={l.path} to={l.path} className="hover:text-foreground transition-colors">
