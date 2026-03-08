@@ -14,10 +14,10 @@ const Contact = () => (
   <Layout>
     <section className="section-padding">
       <div className="container-narrow">
-        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <p className="text-sm font-medium uppercase tracking-widest text-primary">Get in Touch</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Let's Start a Conversation</h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-3 max-w-2xl text-lg text-muted-foreground leading-relaxed">
             Whether you'd like to invite me to speak, explore a collaboration, discuss a media opportunity, or simply connect — I'd love to hear from you.
           </p>
         </motion.div>

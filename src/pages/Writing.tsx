@@ -5,7 +5,7 @@ const Writing = () => {
   return (
     <Layout>
       <section className="section-padding">
-        <div className="container-wide">
+        <div className="container-narrow">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-sm font-medium uppercase tracking-widest text-primary">My Posts</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Thought Leadership</h1>

@@ -16,6 +16,7 @@ const Speaking = () => {
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <p className="text-sm font-medium uppercase tracking-widest text-primary">Speaking</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">Speaker Profile</h1>
+            <p className="mt-3 text-lg text-muted-foreground">Conferences, keynotes, and topics I speak on.</p>
           </motion.div>
 
           {/* Bio */}
