@@ -33,12 +33,6 @@ const Footer = () => (
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border p-2.5 text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors" aria-label="LinkedIn">
               <Linkedin className="h-4 w-4" />
             </a>
-            <a href={profile.twitter} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border p-2.5 text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors" aria-label="Twitter">
-              <Twitter className="h-4 w-4" />
-            </a>
-            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-border p-2.5 text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors" aria-label="GitHub">
-              <Github className="h-4 w-4" />
-            </a>
             <a href={`mailto:${profile.email}`} className="rounded-lg border border-border p-2.5 text-muted-foreground hover:text-primary hover:border-primary/30 transition-colors" aria-label="Email">
               <Mail className="h-4 w-4" />
             </a>
