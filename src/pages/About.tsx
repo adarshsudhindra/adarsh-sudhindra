@@ -3,6 +3,15 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { profile, education, certifications, principles, capabilities } from "@/data/profile";
+import kelloggLogo from "@/assets/kellogg.jpeg";
+import illinoisLogo from "@/assets/illinois.jpeg";
+import nieLogo from "@/assets/nie.jpg";
+
+const institutionLogos: Record<string, string> = {
+  "Northwestern University — Kellogg School of Management": kelloggLogo,
+  "University of Illinois Urbana-Champaign": illinoisLogo,
+  "The National Institute of Engineering, Mysore": nieLogo,
+};
 
 const About = () => (
   <Layout>
@@ -48,7 +57,12 @@ const About = () => (
               >
                 <p className="text-xs font-medium text-primary">{e.year}</p>
                 <h3 className="mt-1 font-semibold">{e.degree}</h3>
-                <p className="mt-0.5 text-sm text-muted-foreground">{e.institution}</p>
+                <div className="mt-0.5 flex items-center gap-2">
+                  {institutionLogos[e.institution] && (
+                    <img src={institutionLogos[e.institution]} alt={e.institution} className="h-5 w-5 rounded-sm object-contain" />
+                  )}
+                  <p className="text-sm text-muted-foreground">{e.institution}</p>
+                </div>
               </motion.div>
             ))}
           </div>
