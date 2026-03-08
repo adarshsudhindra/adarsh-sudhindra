@@ -29,7 +29,7 @@ const Contact = () => (
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12"
         >
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
             <Mail className="h-7 w-7 text-primary" />
           </div>
           <h2 className="mt-6 text-2xl font-bold">Drop me a line</h2>
