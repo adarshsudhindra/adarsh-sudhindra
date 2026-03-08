@@ -59,6 +59,8 @@ const Index = () => {
               <img
                 src={profilePhoto}
                 alt="Adarsh Sudhindra"
+                width={256}
+                height={256}
                 className="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-4 border-primary/20 shadow-xl"
               />
             </motion.div>

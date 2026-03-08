@@ -20,7 +20,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Adarsh Sudhindra" className="h-9 w-9 rounded-md" />
+          <img src={logo} alt="Adarsh Sudhindra" width={36} height={36} className="h-9 w-9 rounded-md" />
           <span className="font-heading text-lg font-bold hidden sm:inline">Adarsh Sudhindra</span>
         </Link>
 
