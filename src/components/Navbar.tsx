@@ -40,6 +40,7 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile toggle */}
