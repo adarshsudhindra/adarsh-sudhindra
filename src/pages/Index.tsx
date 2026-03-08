@@ -73,7 +73,7 @@ const Index = () => {
       {/* Metrics */}
       <section className="section-padding">
         <div className="container-wide">
-          <SectionHeading title="At a Glance" subtitle="Key highlights from my career journey." />
+          <SectionHeading title="At a Glance" subtitle="Key highlights from my career journey." align="center" />
           <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
             {metrics.map((m, i) =>
             <MetricCard key={m.label} label={m.label} value={m.value} index={i} />
