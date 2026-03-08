@@ -27,7 +27,7 @@ const Work = () => {
           {/* Experience */}
           <div className="mt-12">
             <SectionHeading title="Experience Timeline" />
-            <div className="mt-8">
+            <div className="mt-6">
               {experiences.map((e, i) => (
                 <TimelineItem key={e.company + e.title} {...e} index={i} />
               ))}
