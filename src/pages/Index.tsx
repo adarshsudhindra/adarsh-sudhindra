@@ -49,7 +49,7 @@ const Index = () => {
                   to="/writing"
                   className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-muted">
                   
-                  Read My Writing
+                  Read My Posts
                 </Link>
               </div>
             </div>
