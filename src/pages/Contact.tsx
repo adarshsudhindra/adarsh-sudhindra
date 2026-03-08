@@ -27,7 +27,7 @@ const Contact = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12 text-center"
+          className="mt-12 rounded-2xl border border-border bg-card p-8 md:p-12"
         >
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
             <Mail className="h-7 w-7 text-primary" />
