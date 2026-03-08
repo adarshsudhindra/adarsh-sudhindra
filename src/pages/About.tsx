@@ -6,6 +6,11 @@ import { profile, education, certifications, principles, capabilities } from "@/
 import kelloggLogo from "@/assets/kellogg.jpeg";
 import illinoisLogo from "@/assets/illinois.jpeg";
 import nieLogo from "@/assets/nie.jpg";
+import mitLogo from "@/assets/mit.jpeg";
+
+const certLogos: Record<string, string> = {
+  "MIT Sloan School of Management": mitLogo,
+};
 
 const institutionLogos: Record<string, string> = {
   "Northwestern University — Kellogg School of Management": kelloggLogo,
