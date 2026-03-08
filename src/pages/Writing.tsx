@@ -17,7 +17,7 @@ const Writing = () => {
           <div className="mt-12">
             <iframe
               src="https://widgets.sociablekit.com/linkedin-profile-posts/iframe/25660904"
-              sandbox="allow-scripts allow-same-origin allow-popups"
+              sandbox="allow-scripts allow-same-origin"
               referrerPolicy="no-referrer"
               loading="lazy"
               className="w-full border-0"
