@@ -45,7 +45,7 @@ export interface Award {
 export const profile = {
   name: "Adarsh Sudhindra",
   role: "Chief Innovation Officer | Technologist | Innovator | Entrepreneur | TEDx Speaker | UIUC Computer Science | Kellogg School of Business",
-  summary: "As Chief Innovation Officer at Excelsoft Technologies since February 2026, I bring extensive experience in product management, product development, and educational technology. My work emphasizes driving forward innovative solutions that align with organizational goals and foster impactful advancements in e-learning.\n\nI build products that make high-stakes learning and assessment smarter, fairer, and more secure. With deep experience across AI, product strategy, and innovation systems, I help organizations rethink how they evaluate talent and potential.",
+  summary: "As Chief Innovation Officer at Excelsoft Technologies since February 2026, I bring extensive experience in product management, product development, and educational technology. My work emphasizes driving forward innovative solutions that align with organizational goals and foster impactful advancements in e-learning. I build products that make high-stakes learning and assessment smarter, fairer, and more secure.",
   location: "Greater Boston, US",
   email: "adarsh.sudhindra@gmail.com",
   linkedin: "https://www.linkedin.com/in/adarshsudhindra/",
