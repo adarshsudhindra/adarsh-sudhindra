@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Shield, Target, Lightbulb, Users } from "lucide-react";
 import Layout from "@/components/Layout";
-import profilePhoto from "@/assets/profile-sm.webp";
+import profilePhoto from "@/assets/profile-opt.webp";
 import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
 
