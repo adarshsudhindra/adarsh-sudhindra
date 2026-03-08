@@ -7,7 +7,7 @@ import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
 
 import TimelineItem from "@/components/TimelineItem";
-import { profile, metrics, pillars, experiences, articles, interests } from "@/data/profile";
+import { profile, metrics, pillars, experiences, interests } from "@/data/profile";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
