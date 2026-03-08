@@ -52,20 +52,16 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="shrink-0">
-              
+            <div className="shrink-0">
               <img
                 src={profilePhoto}
                 alt="Adarsh Sudhindra"
                 width={256}
                 height={256}
+                fetchPriority="high"
+                decoding="sync"
                 className="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-4 border-primary/20 shadow-xl" />
-              
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </section>
