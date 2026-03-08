@@ -57,7 +57,12 @@ const About = () => (
               >
                 <p className="text-xs font-medium text-primary">{e.year}</p>
                 <h3 className="mt-1 font-semibold">{e.degree}</h3>
-                <p className="mt-0.5 text-sm text-muted-foreground">{e.institution}</p>
+                <div className="mt-0.5 flex items-center gap-2">
+                  {institutionLogos[e.institution] && (
+                    <img src={institutionLogos[e.institution]} alt={e.institution} className="h-5 w-5 rounded-sm object-contain" />
+                  )}
+                  <p className="text-sm text-muted-foreground">{e.institution}</p>
+                </div>
               </motion.div>
             ))}
           </div>
