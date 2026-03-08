@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-opt.webp";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
   { label: "Home", path: "/" },
@@ -39,12 +40,16 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* Mobile toggle */}
-        <button onClick={() => setOpen(!open)} className="lg:hidden p-2 text-foreground" aria-label="Toggle menu">
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="flex items-center gap-1 lg:hidden">
+          <ThemeToggle />
+          <button onClick={() => setOpen(!open)} className="p-2 text-foreground" aria-label="Toggle menu">
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile menu */}
