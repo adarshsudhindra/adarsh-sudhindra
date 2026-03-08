@@ -40,9 +40,8 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="mt-10 border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
+      <div className="mt-10 border-t border-border pt-6 text-center text-xs text-muted-foreground">
         <p>© {new Date().getFullYear()} Adarsh Sudhindra. All rights reserved.</p>
-        <p>Built with care ✦</p>
       </div>
     </div>
   </footer>
