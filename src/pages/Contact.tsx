@@ -69,7 +69,7 @@ const Contact = () => (
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-12"
+          className="mt-12 text-center flex flex-col items-center"
         >
           <p className="text-sm text-muted-foreground">You can also find me on</p>
           <a
