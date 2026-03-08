@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo-opt.webp";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
   { label: "Home", path: "/" },
