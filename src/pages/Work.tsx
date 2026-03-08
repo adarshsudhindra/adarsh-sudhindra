@@ -63,7 +63,7 @@ const Work = () => {
           </div>
 
           {/* Capabilities */}
-          <div className="mt-16">
+          <div className="mt-12">
             <SectionHeading title="Core Capabilities" />
             <div className="mt-6 flex flex-wrap gap-2">
               {capabilities.map((c) => (

@@ -79,7 +79,7 @@ const Speaking = () => {
           </div>
 
           {/* CTA */}
-          <div className="mt-16 rounded-xl border border-border bg-card p-8 text-center">
+          <div className="mt-12 rounded-xl border border-border bg-card p-8 text-center">
             <h3 className="font-heading text-xl font-bold">Invite Me to Speak</h3>
             <p className="mt-2 text-sm text-muted-foreground">I'd love to share insights at your next event or conference.</p>
             <Link to="/contact" className="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:scale-[1.02] transition-transform">
