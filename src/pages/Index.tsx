@@ -31,7 +31,10 @@ const Index = () => {
               <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl lg:text-7xl">
                 {profile.name}
               </h1>
-              <p className="mt-4 text-lg text-muted-foreground md:text-xl max-w-2xl">{profile.role}</p>
+              <div className="mt-4 max-w-2xl">
+                <p className="text-lg text-muted-foreground md:text-xl">Chief Innovation Officer</p>
+                <p className="text-base text-muted-foreground md:text-lg">Technologist | Innovator | Entrepreneur | TEDx Speaker</p>
+              </div>
               <p className="mt-4 text-base text-muted-foreground max-w-xl leading-relaxed">
                 {profile.summary}
               </p>
