@@ -91,17 +91,29 @@ export const pillars = [
 export const experiences: Experience[] = [
   {
     company: "Excelsoft Technologies",
-    title: "Vice President — Products & Innovation",
-    duration: "Oct 2014 – Present",
+    title: "Chief Innovation Officer",
+    duration: "Feb 2026 – Present",
     location: "Greater Boston, US",
     outcomes: [
-      "Leading product strategy and innovation for AI-powered assessment and learning platforms serving millions globally",
+      "Leading innovation strategy and product vision for AI-powered assessment and learning platforms serving millions globally",
+      "Driving forward innovative solutions that align with organizational goals and foster impactful advancements in e-learning",
       "Spearheaded integrity and security frameworks for high-stakes national examinations",
       "Built and scaled cross-functional teams across product, engineering, and design",
       "Drove partnerships with national bodies and global certification organizations",
-      "Progressed from Product Strategist → Senior Product Strategist → VP Products & Innovation",
+      "Progressed from Product Strategist → Senior Product Strategist → VP Products & Innovation → Chief Innovation Officer",
     ],
     current: true,
+  },
+  {
+    company: "Excelsoft Technologies",
+    title: "Vice President — Products & Innovation",
+    duration: "Oct 2014 – Jan 2026",
+    location: "Greater Boston, US",
+    outcomes: [
+      "Led product strategy and innovation for AI-powered assessment and learning platforms",
+      "Spearheaded integrity and security frameworks for high-stakes national examinations",
+      "Built and scaled cross-functional teams across product, engineering, and design",
+    ],
   },
   {
     company: "Adobe Systems",
