@@ -8,7 +8,7 @@ import SectionHeading from "@/components/SectionHeading";
 
 import TimelineItem from "@/components/TimelineItem";
 import { profile, metrics, pillars, experiences, interests } from "@/data/profile";
-const forbesBanner = "/forbes-banner.png";
+import forbesBanner from "@/assets/forbes-banner.webp";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
