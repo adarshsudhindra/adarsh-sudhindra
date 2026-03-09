@@ -8,7 +8,7 @@ import SectionHeading from "@/components/SectionHeading";
 
 import TimelineItem from "@/components/TimelineItem";
 import { profile, metrics, pillars, experiences, interests } from "@/data/profile";
-import forbesBanner from "@/assets/forbes-banner.webp";
+const forbesBanner = "/forbes-banner.png";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
@@ -22,8 +22,6 @@ const Index = () => {
         <img
           src={forbesBanner}
           alt="Forbes Technology Council – 2026 Official Member"
-          width={1920}
-          height={1080}
           className="w-full h-auto object-cover"
           loading="eager"
           fetchPriority="high"
