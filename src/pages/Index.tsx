@@ -24,6 +24,7 @@ const Index = () => {
           alt="Forbes Technology Council – 2026 Official Member"
           className="w-full h-auto object-cover"
           loading="eager"
+          fetchPriority="high"
         />
       </div>
 
