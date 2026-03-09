@@ -28,13 +28,13 @@ const Index = () => {
       </div>
 
       {/* Hero */}
-      <section className="section-padding" style={{ background: "var(--hero-gradient)" }}>
+      <section className="pt-4 pb-8 md:pt-6 md:pb-12 px-4 md:px-8" style={{ background: "var(--hero-gradient)" }}>
         <div className="container-narrow">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="py-12 md:py-20 flex flex-col-reverse md:flex-row items-center gap-10">
+            className="py-6 md:py-10 flex flex-col-reverse md:flex-row items-center gap-8">
             
             <div className="flex-1">
               <p className="text-sm font-medium uppercase tracking-widest text-primary">Welcome</p>
