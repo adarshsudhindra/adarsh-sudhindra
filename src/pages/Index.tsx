@@ -8,6 +8,7 @@ import SectionHeading from "@/components/SectionHeading";
 
 import TimelineItem from "@/components/TimelineItem";
 import { profile, metrics, pillars, experiences, interests } from "@/data/profile";
+import forbesBanner from "@/assets/forbes-banner.png";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
 
@@ -16,6 +17,16 @@ const Index = () => {
 
   return (
     <Layout>
+      {/* Forbes Banner */}
+      <div className="w-full">
+        <img
+          src={forbesBanner}
+          alt="Forbes Technology Council – 2026 Official Member"
+          className="w-full h-auto object-cover"
+          loading="eager"
+        />
+      </div>
+
       {/* Hero */}
       <section className="section-padding" style={{ background: "var(--hero-gradient)" }}>
         <div className="container-narrow">
