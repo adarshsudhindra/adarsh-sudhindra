@@ -7,7 +7,8 @@ import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
 
 import TimelineItem from "@/components/TimelineItem";
-import { profile, metrics, pillars, experiences, interests } from "@/data/profile";
+import { profile, metrics, pillars, experiences, interests, book } from "@/data/profile";
+import bookCover from "@/assets/compounding-leader-cover.jpg.asset.json";
 const forbesBanner = "/forbes-banner.png";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
