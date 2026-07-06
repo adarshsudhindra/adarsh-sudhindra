@@ -42,13 +42,33 @@ export interface Award {
   description?: string;
 }
 
+export interface Book {
+  title: string;
+  subtitle: string;
+  author: string;
+  publisher?: string;
+  amazonUrl: string;
+  coverAsset: string;
+  description?: string;
+}
+
 export const profile = {
   name: "Adarsh Sudhindra",
-  role: "Chief Innovation Officer | Technologist | Innovator | Entrepreneur | TEDx Speaker | UIUC Computer Science | Kellogg School of Business",
+  role: "Chief Innovation Officer | Technologist | Innovator | Entrepreneur | TEDx Speaker | Author | UIUC Computer Science | Kellogg School of Business",
   summary: "As Chief Innovation Officer at Excelsoft Technologies since February 2026, I bring extensive experience in product management, product development, and educational technology. My work emphasizes driving forward innovative solutions that align with organizational goals and foster impactful advancements in e-learning. I build products that make high-stakes learning and assessment smarter, fairer, and more secure.",
   location: "Greater Boston, US",
   email: "adarsh.sudhindra@gmail.com",
   linkedin: "https://www.linkedin.com/in/adarshsudhindra/",
+};
+
+export const book: Book = {
+  title: "The Compounding Leader",
+  subtitle: "A Mid-Career Manifesto in the Age of AI",
+  author: "Adarsh Sudhindra",
+  publisher: "Notion Press",
+  amazonUrl: "https://amzn.in/d/02DsrEli",
+  coverAsset: "@/assets/compounding-leader-cover.jpg.asset.json",
+  description: "A mid-career manifesto for leaders navigating the age of AI—exploring how small, consistent actions compound into extraordinary leadership impact over time.",
 };
 
 export const metrics = [

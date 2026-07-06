@@ -7,7 +7,8 @@ import MetricCard from "@/components/MetricCard";
 import SectionHeading from "@/components/SectionHeading";
 
 import TimelineItem from "@/components/TimelineItem";
-import { profile, metrics, pillars, experiences, interests } from "@/data/profile";
+import { profile, metrics, pillars, experiences, interests, book } from "@/data/profile";
+import bookCover from "@/assets/compounding-leader-cover.jpg.asset.json";
 const forbesBanner = "/forbes-banner.png";
 
 const iconMap: Record<string, React.ElementType> = { Brain, Shield, Target, Lightbulb, Users };
@@ -44,7 +45,7 @@ const Index = () => {
               </h1>
               <div className="mt-4 max-w-2xl">
                 <p className="text-lg text-muted-foreground md:text-xl">Chief Innovation Officer @ Excelsoft Technologies</p>
-                <p className="text-base text-muted-foreground md:text-lg">Technologist | Innovator | Entrepreneur | TEDx Speaker</p>
+                <p className="text-base text-muted-foreground md:text-lg">Technologist | Innovator | Entrepreneur | TEDx Speaker | Author</p>
               </div>
               <p className="mt-4 text-base text-muted-foreground max-w-xl leading-relaxed">
                 {profile.summary}
@@ -75,6 +76,55 @@ const Index = () => {
                 className="h-48 w-48 md:h-64 md:w-64 rounded-full object-cover border-4 border-primary/20 shadow-xl" />
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Featured Book */}
+      <section className="section-padding bg-muted/30">
+        <div className="container-narrow">
+          <div className="rounded-2xl border border-border bg-card p-6 md:p-10">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
+              <a
+                href={book.amazonUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 block overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                aria-label={`${book.title} on Amazon`}
+              >
+                <img
+                  src={bookCover.url}
+                  alt={`Book cover: ${book.title} — ${book.subtitle}`}
+                  width={240}
+                  height={360}
+                  className="h-64 w-auto md:h-80 object-cover"
+                  loading="eager"
+                  decoding="async"
+                />
+              </a>
+              <div className="flex-1 text-center md:text-left">
+                <p className="text-sm font-medium uppercase tracking-widest text-primary">New Book</p>
+                <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">{book.title}</h2>
+                <p className="mt-2 text-lg text-muted-foreground italic">{book.subtitle}</p>
+                <p className="mt-4 text-muted-foreground leading-relaxed max-w-xl">{book.description}</p>
+                <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
+                  <a
+                    href={book.amazonUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    Buy on Amazon <ArrowRight className="h-4 w-4" />
+                  </a>
+                  <Link
+                    to="/writing"
+                    className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-muted"
+                  >
+                    Explore My Writing
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
