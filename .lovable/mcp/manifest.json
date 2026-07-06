@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "adarsh-sudhindra-mcp",
+      "version": "0.1.0",
+      "title": "Adarsh Sudhindra"
+    },
+    "tools": [
+      {
+        "name": "get_profile",
+        "title": "Get Profile",
+        "description": "Get Adarsh Sudhindra's professional profile summary including name, role, positioning statement, and contact links.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_experience",
+        "title": "Get Work Experience",
+        "description": "Get Adarsh Sudhindra's full work experience timeline including roles, companies, durations, locations, and key outcomes. Optionally filter to only the current role.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "current_only": {
+              "type": "boolean",
+              "description": "If true, only return the current role."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_education",
+        "title": "Get Education & Certifications",
+        "description": "Get Adarsh Sudhindra's academic background and professional certifications including institutions, degrees, and years.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_contact",
+        "title": "Get Contact Info",
+        "description": "Get Adarsh Sudhindra's contact information (email, LinkedIn, website) and the types of inquiries he welcomes.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
