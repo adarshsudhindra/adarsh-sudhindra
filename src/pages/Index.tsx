@@ -92,7 +92,7 @@ const Index = () => {
                 aria-label={`${book.title} on Amazon`}
               >
                 <img
-                  src={bookCover.url}
+                  src={bookCover}
                   alt={`Book cover: ${book.title} — ${book.subtitle}`}
                   width={240}
                   height={360}
